@@ -1,0 +1,131 @@
+*{
+     font-family: "Unna", serif;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
+}
+
+
+header{
+        width: 100%;
+        background: rgb(75, 15, 15);
+        height: 100px;
+        position: fixed;
+}
+
+
+.cp{
+    margin-top: 0;
+    margin-bottom: 0;
+    float:right;
+}
+
+.cf{
+    display: block;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card {
+    padding: 20px;
+    border: 20px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% ;
+    gap: 100px;
+    margin-top: 50px;
+    font-size: 15px;
+    margin-left: 25px;
+    margin-right: 35px;
+    text-align: center;
+    border: 30px;
+}
+.card {
+    background-color:#fff;
+    border: solid rgb(75, 15, 15), 5px;
+    border-radius: 20px;
+}
+
+.prob{
+    background-color:rgb(75, 15, 15) ;
+    color: #ddd;
+    height: 200px;
+    font-size: 25px;
+}
+
+body{
+    height: 100vh;
+    background-position: center;
+    background-color: #ddd;
+
+}
+
+.intro h1::first-letter {
+    color: rgb(75, 15, 15); 
+    font-size: 2em; 
+    font-weight: bold; 
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.i-contaier h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.i-contai p {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.butt {
+    padding: 10px 20px;
+    background-color: rgb(75, 15, 15);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.img1 {
+    display: inline-block; 
+    overflow: hidden; /* СКРЫВАЕТ ЗА КОНТУРОМ*/
+    transition: 1s; 
+    display: block; 
+    mix-blend-mode: multiply; /* УБИРАЕТ ФОН*/
+
+  }
+  .img1:hover {
+    transform: scale(1.2); 
+  }
+
+  header::before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; /* Высота градиента */ 
+    background: linear-gradient(to bottom, transparent, rgb(226, 61, 61)); 
+    pointer-events: none; /* Градиент не будет влиять на взаимодействие с изображением */
+}
+
+.probel{
+    content: ""; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; /* Высота градиента */ 
+    background: linear-gradient(to bottom, transparent, rgb(226, 61, 61)); 
+    pointer-events: none;
+}
